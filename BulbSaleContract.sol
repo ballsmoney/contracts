@@ -2,6 +2,7 @@ pragma solidity ^0.5.0;
 
 import "./Bulbasaur.sol";
 
+//presale contract
 contract BulbTokenSale {
     address payable admin;
     Bulbasaur public tokenContract;
