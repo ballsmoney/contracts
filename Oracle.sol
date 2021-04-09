@@ -775,8 +775,8 @@ contract MarketOracle is Ownable {
         ) = getBusdBnbRate();
 
         uint256 answer =
-            (bulbasaurBnbAverage * 1e6) / (busdBnbAverage / _yen_usd);
+            (bulbasaurBnbAverage * 1e6) / busdBnbAverage;
 
-        return (answer);
+        return (answer * _yen_usd));
     }
 }
